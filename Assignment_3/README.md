@@ -1,4 +1,4 @@
-# Assignment 1
+# Assignment 3
 
 1. PROBLEM STATEMENT: \
 	The Neural network is designed to train a model, which accepts an MNIST data image and \
