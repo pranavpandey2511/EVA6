@@ -34,7 +34,14 @@
 	Log-softmax is calculated on the predicted value and the loss is calculated using used negative log-likelihood strategy.
 	In most of the classification problems we use Negative log-likelihood as a loss function. \
 	It'll give high penalty for the wrong prediction estimations which helps to reach the global-minima swiftly.\
-\
+
+
+
+### Training Accuracy: 99.6%
+### Validation Accuracy: 98.13%
+### Testing Accuracy: 98.88%
+
+
 Epoch:0	 TRAIN	 Correct Prediction:29952/48000 	 Loss:497.4713537991047\
 Epoch:0	 VAL	 Correct Prediction:11509/12000 	 Loss:19.662540275603533\
 
@@ -117,8 +124,4 @@ Epoch:19	 VAL	 Correct Prediction:11776/12000 	 Loss:8.765461752424017\
 ====================
 
 
-
-### Training Accuracy: 99.6%
-### Validation Accuracy: 98.13%
-### Testinf Accuracy: 98.88%
 
