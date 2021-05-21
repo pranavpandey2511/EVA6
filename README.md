@@ -78,7 +78,7 @@ Epoch:9	 VAL	 Correct Prediction:11748/12000 	 Loss:8.744419929105788\
 Epoch:10	 TRAIN	 Correct Prediction:47756/48000 	 Loss:12.318187298253179\
 Epoch:10	 VAL	 Correct Prediction:11751/12000 	 Loss:10.829392328858376\
 
-====================
+====================\
 Epoch:11	 TRAIN	 Correct Prediction:47684/48000 	 Loss:14.567827199760359\
 Epoch:11	 VAL	 Correct Prediction:11734/12000 	 Loss:10.623305963119492\
 
@@ -114,11 +114,11 @@ Epoch:18	 VAL	 Correct Prediction:11751/12000 	 Loss:10.46750884805806\
 Epoch:19	 TRAIN	 Correct Prediction:47808/48000 	 Loss:9.533772916081944\
 Epoch:19	 VAL	 Correct Prediction:11776/12000 	 Loss:8.765461752424017\
 
-====================\
+====================
 
-\
 
-## Training Accuracy: 99.6%
-## Validation Accuracy: 98.13%
-## Testinf Accuracy: 98.88%
+
+### Training Accuracy: 99.6%
+### Validation Accuracy: 98.13%
+### Testinf Accuracy: 98.88%
 
