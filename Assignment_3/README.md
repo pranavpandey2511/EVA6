@@ -45,6 +45,12 @@
 ![Model Architecture](./images/model.onnx.png)
 
 
+Group 1:  
+Pranav Pandey  
+Amit Agarwal  
+Rajmannar Reddy  
+Shree Latha  
+
 
 Epoch:0	 TRAIN	 Correct Prediction:29952/48000 	 Loss:497.4713537991047\
 Epoch:0	 VAL	 Correct Prediction:11509/12000 	 Loss:19.662540275603533\
