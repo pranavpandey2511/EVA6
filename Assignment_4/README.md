@@ -10,13 +10,13 @@
 | <centre>Sree Latha Chopparapu</centre>         | <centre>sreelathaemail@gmail.com</centre>    |
 
 1. # Backpropagation
-[Readme]()<br>
-[Excel]()
+[Readme](./Backpropogation/Backpropagation.xlsx)<br>
+[Excel](./Backpropogation/README.md)
 
 
 2. # Architectural Basics
-[Questions Readme]()<br>
-[Notebook]()
+[Questions Readme](./Architecture/README.md)<br>
+[Notebook](./Architecture/assignemnt_4_solutions.ipynb)
 
 ## Model Initialization:
 
