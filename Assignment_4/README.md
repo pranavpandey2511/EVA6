@@ -10,8 +10,8 @@
 | <centre>Sree Latha Chopparapu</centre>         | <centre>sreelathaemail@gmail.com</centre>    |
 
 1. # Backpropagation
-[Readme](./Backpropogation/Backpropagation.xlsx)<br>
-[Excel](./Backpropogation/README.md)
+[Readme](./Backpropagation/README.md)<br>
+[Excel](./Backpropagation/Backpropagation.xlsx)
 
 
 2. # Architectural Basics
