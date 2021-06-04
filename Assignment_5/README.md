@@ -39,9 +39,9 @@ Write a neural network to predict ***MNIST dataset*** with the following limitat
 
 | <centre>Model</centre> | <centre>Target</centre> |<centre>Results</centre> | <centre>Analysis</centre> | <centre> links </centre> |
 | ------------ | ------------- | ---------- | --- | ------ |
-| MNIST_basic_skeleton | 1. This skeleton of the model is built to check model performance<br>2. No Batch normalisation, dropout and image augmentations used<br>3. No lr_scheduler were used<br>| 1. Train Accuracy - 98.26<br>2. Test Accuracy - 97.96<br> 3. Total parameters - 10,578 | 1. The Model was learning based on the accuracy<br>2. There is also a slight overfit in model<br>3. Adding regularisation and scheduer to impore performance<br> | 1. [Notebook link](./Notebooks/MNIST_basic.ipynb)<br> |
+| MNIST_basic_skeleton | 1. This skeleton of the model is built to check model performance<br>2. No Batch normalisation, dropout and image augmentations used<br>3. No lr_scheduler were used<br>| 1. Train Accuracy - 98.26<br>2. Test Accuracy - 97.96<br> 3. Total parameters - 10,578 | 1. The Model was learning based on the accuracy<br>2. There is also a slight overfit in model<br>3. Adding regularisation and scheduer to impore performance<br> | 1. [Notebook link](./Notebooks/MNIST_basic_skeleton.ipynb)<br> |
 | MNIST_Regularization | 1. Model should achieve the target of 99.4 within 10k parameters<br>2. To achieve this we added dropout, lr_scheduler, batchnorm<br>3. In the basic skeleton the parameter count was little above 10k and this was reduced under 10k | 1. Train accuracy - 99.39<br>2. Test accuracy - 99.33<br>3. Total parameters - 8178 | 1. The performance the model reached 99.39<br>2. Overfitting of training data is minimised<br>3. Multiple set of dropout and lr_scheduler values were used<br>4. Dropout of `0` gave better accuracy<br>5. StepLR with step_size of 5 gave better accuracy | 1. [Notebook link](./Notebooks/MNIST_regularization.ipynb)<br> |
-| MNIST_augmentation | 1. Model parameters were further reduced below 8k<br>2. Basic Image agumentation were used<br>3. Plotted some incorrect predicted to check was went wrong in previous model | 1. Train accuracy - 98.20<br>2. Test accuracy - 99.46<br>3. Total parameters - 7946 |1. The model is underfitting as we have added rotation to train data<br>2. RandomAffine with +-7 degree rotation, 5 degree shear, 15% translation, and +- 30% scaling is introduced.<br>|. [Notebook link](./Notebooks/MNIST_augmetation.ipynb)<br>|
+| MNIST_augmentation | 1. Model parameters were further reduced below 8k<br>2. Basic Image agumentation were used<br>3. Plotted some incorrect predicted to check was went wrong in previous model | 1. Train accuracy - 98.20<br>2. Test accuracy - 99.46<br>3. Total parameters - 7946 |1. The model is underfitting as we have added rotation to train data<br>2. RandomAffine with +-7 degree rotation, 5 degree shear, 15% translation, and +- 30% scaling is introduced.<br>|. [Notebook link](./Notebooks/MNIST_augmentation.ipynb)<br>|
 
 ### Final Model Architecture:
 
@@ -168,5 +168,5 @@ Test set: Average loss: 0.0178, Accuracy: 9946/10000 (99.46%)
 
 <!-- <p align="center"><img src width="800"></p> -->
 <p align="center">
-  <img src=="./images/augmentation.png" width="350" title="hover text">
+  <img src="./images/augmentation.png" width="350" title="hover text">
 </p>
