@@ -1,11 +1,11 @@
 <br/>
 <h1 align="center">Session 5: Coding Drill Down
 <br/>
-
 <!-- toc -->
+
 ### Contributors
 
-| <centre>Name</centre> | <centre>Mail id</centre> | 
+| <centre>Name</centre> | <centre>Mail id</centre> |
 | ------------ | ------------- |
 | <centre>Amit Agarwal</centre>         | <centre>amit.pinaki@gmail.com</centre>    |
 | <centre>Pranav Panday</centre>         | <centre>pranavpandey2511@gmail.com</centre>    |
@@ -24,7 +24,7 @@ Write a neural network to predict ***MNIST dataset*** with the following limitat
 
 1. #### HYPERPARAMS:
 
-    num_epochs = 20<br>
+    num_epochs = 15<br>
     batch_size = 128<br>
     lr = 0.01<br>
 
@@ -39,9 +39,9 @@ Write a neural network to predict ***MNIST dataset*** with the following limitat
 
 | <centre>Model</centre> | <centre>Target</centre> |<centre>Results</centre> | <centre>Analysis</centre> | <centre> links </centre> |
 | ------------ | ------------- | ---------- | --- | ------ |
-| MNIST_basic_skeleton | 1. This skeleton of the model is built to check model performance<br>2. No Batch normalisation, dropout and image augmentations used<br>3. No lr_scheduler were used<br>| 1. Train Accuracy - 98.26<br>2. Test Accuracy - 97.96<br> 3. Total parameters - 10,578 | 1. The Model was learning based on the accuracy<br>2. There is also a slight overfit in model<br>3. Adding regularisation and scheduer to impore performance<br> | 1. ![Notebook link](#./Notebooks/MNIST_basic.ipynb)<br>|
-| MNIST_Regularization | 1. Model should achieve the target of 99.4 within 10k parameters<br>2. To achieve this we added dropout, lr_scheduler, batchnorm<br>3. In the basic skeleton the parameter count was little above 10k and this was reduced under 10k | 1. Train accuracy - 99.39<br>2. Test accuracy - 99.33<br>3. Total parameters - 8178 | 1. The performance the model reached 99.39<br>2. Overfitting of training data is minimised<br>3. Multiple set of dropout and lr_scheduler values were used<br>4. Dropout of `0` gave better accuracy<br>5. StepLR with step_size of 5 gave better accuracy | 1. ![Notebook link](#./Notebooks/MNIST_regularization.ipynb)<br>|
-| MNIST_augmentation | 1. Model parameters were further reduced below 8k<br>2. Basic Image agumentation were used<br>3. Plotted some incorrect predicted to check was went wrong in previous model | 1. Train accuracy - 98.23<br>2. Test accuracy - 99.44<br>3. Total parameters - 7946|1. The model is underfitting as we have added rotation to train data<br>2. RandomAffine with 7 degree orientation is introduced<br>|. ![Notebook link](#./Notebooks/MNIST_augmetation.ipynb)<br>|
+| MNIST_basic_skeleton | 1. This skeleton of the model is built to check model performance<br>2. No Batch normalisation, dropout and image augmentations used<br>3. No lr_scheduler were used<br>| 1. Train Accuracy - 98.26<br>2. Test Accuracy - 97.96<br> 3. Total parameters - 10,578 | 1. The Model was learning based on the accuracy<br>2. There is also a slight overfit in model<br>3. Adding regularisation and scheduer to impore performance<br> | 1. [Notebook link](./Notebooks/MNIST_basic.ipynb)<br> |
+| MNIST_Regularization | 1. Model should achieve the target of 99.4 within 10k parameters<br>2. To achieve this we added dropout, lr_scheduler, batchnorm<br>3. In the basic skeleton the parameter count was little above 10k and this was reduced under 10k | 1. Train accuracy - 99.39<br>2. Test accuracy - 99.33<br>3. Total parameters - 8178 | 1. The performance the model reached 99.39<br>2. Overfitting of training data is minimised<br>3. Multiple set of dropout and lr_scheduler values were used<br>4. Dropout of `0` gave better accuracy<br>5. StepLR with step_size of 5 gave better accuracy | 1. [Notebook link](./Notebooks/MNIST_regularization.ipynb)<br> |
+| MNIST_augmentation | 1. Model parameters were further reduced below 8k<br>2. Basic Image agumentation were used<br>3. Plotted some incorrect predicted to check was went wrong in previous model | 1. Train accuracy - 98.20<br>2. Test accuracy - 99.46<br>3. Total parameters - 7946 |1. The model is underfitting as we have added rotation to train data<br>2. RandomAffine with +-7 degree rotation, 5 degree shear, 15% translation, and +- 30% scaling is introduced.<br>|. [Notebook link](./Notebooks/MNIST_augmetation.ipynb)<br>|
 
 ### Final Model Architecture:
 
@@ -87,81 +87,81 @@ Write a neural network to predict ***MNIST dataset*** with the following limitat
 ### Training Log:
 
 ```
-  0%|          | 0/469 [00:00<?, ?it/s]EPOCH: 1
-Loss=0.2920304238796234 Batch_id=468 Accuracy=83.17: 100%|██████████| 469/469 [00:15<00:00, 30.29it/s]
+ 
+0%|          | 0/469 [00:00<?, ?it/s]EPOCH: 1
+Loss=0.16498884558677673 Batch_id=468 Accuracy=81.06: 100%|██████████| 469/469 [00:22<00:00, 20.50it/s]
   0%|          | 0/469 [00:00<?, ?it/s]
-Test set: Average loss: 0.0678, Accuracy: 9804/10000 (98.04%)
+Test set: Average loss: 0.0913, Accuracy: 9739/10000 (97.39%)
 
 EPOCH: 2
-Loss=0.1099965050816536 Batch_id=468 Accuracy=95.32: 100%|██████████| 469/469 [00:15<00:00, 29.66it/s]
+Loss=0.2068132609128952 Batch_id=468 Accuracy=95.38: 100%|██████████| 469/469 [00:23<00:00, 20.29it/s]
   0%|          | 0/469 [00:00<?, ?it/s]
-Test set: Average loss: 0.0540, Accuracy: 9841/10000 (98.41%)
+Test set: Average loss: 0.0471, Accuracy: 9851/10000 (98.51%)
 
 EPOCH: 3
-Loss=0.05505436658859253 Batch_id=468 Accuracy=96.20: 100%|██████████| 469/469 [00:16<00:00, 29.14it/s]
+Loss=0.09336403757333755 Batch_id=468 Accuracy=96.31: 100%|██████████| 469/469 [00:23<00:00, 20.10it/s]
   0%|          | 0/469 [00:00<?, ?it/s]
-Test set: Average loss: 0.0427, Accuracy: 9861/10000 (98.61%)
+Test set: Average loss: 0.0381, Accuracy: 9870/10000 (98.70%)
 
 EPOCH: 4
-Loss=0.0559239387512207 Batch_id=468 Accuracy=96.80: 100%|██████████| 469/469 [00:16<00:00, 27.97it/s]
+Loss=0.17863857746124268 Batch_id=468 Accuracy=96.66: 100%|██████████| 469/469 [00:23<00:00, 19.93it/s]
   0%|          | 0/469 [00:00<?, ?it/s]
-Test set: Average loss: 0.0340, Accuracy: 9896/10000 (98.96%)
+Test set: Average loss: 0.0358, Accuracy: 9889/10000 (98.89%)
 
 EPOCH: 5
-Loss=0.11785978823900223 Batch_id=468 Accuracy=97.18: 100%|██████████| 469/469 [00:16<00:00, 27.95it/s]
+Loss=0.10862476378679276 Batch_id=468 Accuracy=97.00: 100%|██████████| 469/469 [00:23<00:00, 20.06it/s]
   0%|          | 0/469 [00:00<?, ?it/s]
-Test set: Average loss: 0.0314, Accuracy: 9900/10000 (99.00%)
+Test set: Average loss: 0.0325, Accuracy: 9897/10000 (98.97%)
 
 EPOCH: 6
-Loss=0.1042698547244072 Batch_id=468 Accuracy=97.30: 100%|██████████| 469/469 [00:15<00:00, 29.49it/s]
+Loss=0.050012510269880295 Batch_id=468 Accuracy=97.13: 100%|██████████| 469/469 [00:23<00:00, 20.33it/s]
   0%|          | 0/469 [00:00<?, ?it/s]
-Test set: Average loss: 0.0303, Accuracy: 9902/10000 (99.02%)
+Test set: Average loss: 0.0235, Accuracy: 9924/10000 (99.24%)
 
 EPOCH: 7
-Loss=0.23318630456924438 Batch_id=468 Accuracy=97.31: 100%|██████████| 469/469 [00:15<00:00, 29.62it/s]
+Loss=0.05519614741206169 Batch_id=468 Accuracy=97.44: 100%|██████████| 469/469 [00:23<00:00, 20.15it/s]
   0%|          | 0/469 [00:00<?, ?it/s]
-Test set: Average loss: 0.0270, Accuracy: 9915/10000 (99.15%)
+Test set: Average loss: 0.0258, Accuracy: 9922/10000 (99.22%)
 
 EPOCH: 8
-Loss=0.1662347912788391 Batch_id=468 Accuracy=97.55: 100%|██████████| 469/469 [00:15<00:00, 29.70it/s]
+Loss=0.07888182252645493 Batch_id=468 Accuracy=97.52: 100%|██████████| 469/469 [00:23<00:00, 20.37it/s]
   0%|          | 0/469 [00:00<?, ?it/s]
-Test set: Average loss: 0.0270, Accuracy: 9916/10000 (99.16%)
+Test set: Average loss: 0.0248, Accuracy: 9913/10000 (99.13%)
 
 EPOCH: 9
-Loss=0.03322969749569893 Batch_id=468 Accuracy=97.44: 100%|██████████| 469/469 [00:15<00:00, 30.31it/s]
+Loss=0.01957109197974205 Batch_id=468 Accuracy=97.59: 100%|██████████| 469/469 [00:22<00:00, 20.62it/s]
   0%|          | 0/469 [00:00<?, ?it/s]
-Test set: Average loss: 0.0274, Accuracy: 9908/10000 (99.08%)
+Test set: Average loss: 0.0238, Accuracy: 9932/10000 (99.32%)
 
 EPOCH: 10
-Loss=0.11530936509370804 Batch_id=468 Accuracy=97.97: 100%|██████████| 469/469 [00:15<00:00, 29.92it/s]
+Loss=0.060061078518629074 Batch_id=468 Accuracy=98.02: 100%|██████████| 469/469 [00:22<00:00, 20.69it/s]
   0%|          | 0/469 [00:00<?, ?it/s]
-Test set: Average loss: 0.0205, Accuracy: 9938/10000 (99.38%)
+Test set: Average loss: 0.0182, Accuracy: 9944/10000 (99.44%)
 
 EPOCH: 11
-Loss=0.06971058994531631 Batch_id=468 Accuracy=98.10: 100%|██████████| 469/469 [00:15<00:00, 30.07it/s]
+Loss=0.07100395113229752 Batch_id=468 Accuracy=98.17: 100%|██████████| 469/469 [00:22<00:00, 20.41it/s]
   0%|          | 0/469 [00:00<?, ?it/s]
-Test set: Average loss: 0.0201, Accuracy: 9932/10000 (99.32%)
+Test set: Average loss: 0.0185, Accuracy: 9939/10000 (99.39%)
 
 EPOCH: 12
-Loss=0.05070294439792633 Batch_id=468 Accuracy=98.13: 100%|██████████| 469/469 [00:15<00:00, 30.08it/s]
+Loss=0.06369791179895401 Batch_id=468 Accuracy=98.24: 100%|██████████| 469/469 [00:23<00:00, 20.02it/s]
   0%|          | 0/469 [00:00<?, ?it/s]
-Test set: Average loss: 0.0196, Accuracy: 9938/10000 (99.38%)
+Test set: Average loss: 0.0183, Accuracy: 9944/10000 (99.44%)
 
 EPOCH: 13
-Loss=0.07360347360372543 Batch_id=468 Accuracy=98.24: 100%|██████████| 469/469 [00:15<00:00, 30.21it/s]
+Loss=0.08133206516504288 Batch_id=468 Accuracy=98.25: 100%|██████████| 469/469 [00:22<00:00, 20.63it/s]
   0%|          | 0/469 [00:00<?, ?it/s]
-Test set: Average loss: 0.0197, Accuracy: 9937/10000 (99.37%)
+Test set: Average loss: 0.0176, Accuracy: 9945/10000 (99.45%)
 
 EPOCH: 14
-Loss=0.02592841349542141 Batch_id=468 Accuracy=98.20: 100%|██████████| 469/469 [00:15<00:00, 30.38it/s]
+Loss=0.04917359724640846 Batch_id=468 Accuracy=98.17: 100%|██████████| 469/469 [00:22<00:00, 20.66it/s]
   0%|          | 0/469 [00:00<?, ?it/s]
-Test set: Average loss: 0.0193, Accuracy: 9940/10000 (99.40%)
+Test set: Average loss: 0.0181, Accuracy: 9946/10000 (99.46%)
 
 EPOCH: 15
-Loss=0.019798798486590385 Batch_id=468 Accuracy=98.23: 100%|██████████| 469/469 [00:15<00:00, 29.99it/s]
+Loss=0.03378356620669365 Batch_id=468 Accuracy=98.20: 100%|██████████| 469/469 [00:22<00:00, 20.50it/s]
 
-Test set: Average loss: 0.0190, Accuracy: 9944/10000 (99.44%)
-
+Test set: Average loss: 0.0178, Accuracy: 9946/10000 (99.46%)
 ```
 
 ### Model Performance:
