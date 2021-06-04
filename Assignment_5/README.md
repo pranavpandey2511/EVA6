@@ -168,5 +168,5 @@ Test set: Average loss: 0.0178, Accuracy: 9946/10000 (99.46%)
 
 <!-- <p align="center"><img src width="800"></p> -->
 <p align="center">
-  <img src="./images/augmentation.png" width="350" title="hover text">
+  <img src="./images/augmentation.png" width="800" title="hover text">
 </p>
