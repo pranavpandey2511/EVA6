@@ -18,14 +18,14 @@
 #### code structure
 ```
 In the folder ->
--- main.ipynb : it’s the driver notebook that invokes all the individual components of the project contained it the src folder. It invokes loader functions to download mnist data and create data loaders. It also intialiases models based on different normalisation parameter, training them one at time &visualization the errors too.
+-- session_6.ipynb : it’s the driver notebook that invokes all the individual components of the project contained it the src folder. It invokes loader functions to download mnist data and create data loaders. It also intialiases models based on different normalisation parameter, training them one at time &visualization the errors too.
 -- src Folder : The folder consists of modularized code snippet files.
 -- src/train.py : Consists of training algorithm for GN, LN and BN+L1 regularization.
 -- src/test.py : Consists of testing algorithm.
 -- src/plots.py : Responsible for plotting the MNIST data samples.
 -- src/optimise.py : created a learner with SGD optimization with an lr = 0.015.
 -- src/model.py : The Model to train with different normalization techniques.
--- src/data_loader.py: To download the MNIST data.
+-- src/dataLoader.py: To download the MNIST data.
 
 ```
 ## 3. Our Findings on Normalization:
