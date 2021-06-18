@@ -167,7 +167,7 @@ Model was crossing **accuracy 87%** at epoch 40.<br>
 Model [Training Log](./traininglog.md) is attached can be found here<br>
 
 <p align="center">
-  <img src="./images/loss.png" width="200" title="accuracy plot">
+  <img src="./images/loss (1).png" width="200" title="accuracy plot">
 </p>
     
 ## Misclassification:
