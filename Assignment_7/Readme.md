@@ -47,7 +47,7 @@ To achieve 85% accuracy with total Params less than 200k in **`CIFAR10`** datase
 
 ### Model Achitecture:
 
-[iNotebook link](./final_assignment7.ipynb)<br>
+[iNotebook link](./Main.ipynb)<br>
 Model follows `C1C2C3C4` architecture, no maxpooling was performed <br>
 Dilation and stride is performed to reduce the sapatial size of the channels <br>
 The **`Receptive Field`** of the model after performing convolutions are **`147,978`** <br>
